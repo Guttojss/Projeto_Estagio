@@ -1,4 +1,3 @@
-
 const FORM = document.getElementById("FORM").addEventListener('submit',function(event)
 {
     event.preventDefault();
@@ -7,11 +6,10 @@ const FORM = document.getElementById("FORM").addEventListener('submit',function(
     fast(URL);
     codigo(URL);
 
-    console.log("URL inserido");
+    console.log("URL inserido : ",URL.value);
 });
 
 //Verifica a velocidade da URL
-// NAO FUNCIONAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 function fast(URL){
     const start = performance.now();
     fetch(URL.value)
@@ -19,22 +17,26 @@ function fast(URL){
             const end = performance.now();  // Tempo de término
             const duration = end - start;  // Cálculo da duração
             console.log("Tempo de carregamento: ", duration, "ms");
-        })}
+        }
+    )
+}
 
 //Verifica se o URL possui "https://"
 function safe(URL){
-    if(URL.value.includes("https://"))
+    fetch(URL.value)
+    .then(response => 
         {
-            console.log("é safe kk")
+            console.log("Protocolo : ",document.location.protocol)
         }
+    )
 }
 
-//Verifica o código
-//FUNCIONAAAAAA     
+//Verifica o código 
 function codigo(URL)
 {
     fetch(URL.value).then(Response =>
-    {
-    console.log("Código = ", Response.status);
-    }
-    )}
+        {
+          console.log("Código = ", Response.status);
+        }
+    )
+}
