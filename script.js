@@ -30,7 +30,7 @@
         fetch(URL.value)
         .then(response => 
             {
-                console.log("Protocolo : ",document.location.protocol)
+                console.log("Protocolo : ", document.location.protocol)
             }
         )
     }
