@@ -1,11 +1,14 @@
+    //O FORM tem que possuir a Classe FORM
+    //O input tem que possuir a Classe URL
+    
     const FORM = document.getElementById("FORM").addEventListener('submit',function(event)
         {
-            event.preventDefault();
+            event.preventDefault(); //retira o reload automatico
             const URL = document.getElementById("URL")
 
             safe(URL);
             fast(URL);
-            codigo(URL);
+            codigo(URL); 
 
             console.log("URL inserido : ",URL.value);
         }
