@@ -15,7 +15,8 @@
     )
 
     //Verifica a velocidade da URL
-    function fast(URL){
+    function fast(URL)
+    {
         const start = performance.now();
         fetch(URL.value)
         .then(response => 
@@ -29,7 +30,8 @@
 
     //Verifica se o URL possui "https://"
     //pode não funcionar por causa do "Document.location.protocol".
-    function safe(URL){
+    function safe(URL)
+    {
         fetch(URL.value)
         .then(response => 
             {
@@ -43,7 +45,7 @@
     {
         fetch(URL.value).then(Response =>
             {
-            console.log("Código = ", Response.status);
+                console.log("Código = ", Response.status);
             }
         )
     }
