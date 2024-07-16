@@ -1,17 +1,3 @@
-  
-// FEITO PARA FORMS
-///    const FORM = document.getElementById("FORM").addEventListener('submit',function(event)
-//    {
-//        event.preventDefault(); //retira o reload automatico
-///        const URL = document.getElementById("URL")
-///
- //       safe(URL);
- //       fast(URL);
-   //     codigo(URL); 
-//
-   //     console.log("URL inserido : ",URL.value);
-  //  }
-//)
 const button = document.getElementById("submitButton").addEventListener("click",function(event)
 {
     event.preventDefault(); //retira o reload automatico
@@ -23,8 +9,6 @@ const button = document.getElementById("submitButton").addEventListener("click",
     console.log("URL inserido : ",URL.value);
 }
 )
-
-//FEITO PARA O BUTÃO
 
 //Verifica a velocidade da URL
 function fast(URL){
