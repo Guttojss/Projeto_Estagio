@@ -11,6 +11,7 @@ const button = document.getElementById("submitButton").addEventListener("click",
 )
 
 //Verifica a velocidade da URL
+//Dá erro em qualquer URL externo 
 function fast(URL){
     const start = performance.now();
     fetch(URL.value)
@@ -24,7 +25,7 @@ function fast(URL){
 }
 
 //Verifica se o URL possui "https://"
-//pode não funcionar por causa do "Document.location.protocol".
+//Funciona
 function safe(URL){
     fetch(URL.value)
     .then(response => 
@@ -34,7 +35,8 @@ function safe(URL){
     )
 }
 
-//Verifica o código 
+//Verifica o código
+//Dá erro em qualquer URL externo 
 function codigo(URL)
 {
     fetch(URL.value).then(Response =>
