@@ -2,6 +2,10 @@
 
 <h1>URL Scanner</h1>
 
+
+<h4>Only works with blank URL</h4>
+
+
 <h5>#pt</h5>
 <p>
 O URL Scanner é um projeto de Estágio com o objetivo de fazer uma verificação de links e retornar informações como a segurança do site, codigo e tempo de resposta, atividade, entre outras. Pode ver todos os resultados apresentados na consola.
